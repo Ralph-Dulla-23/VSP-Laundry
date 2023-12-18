@@ -1,0 +1,2131 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap');
+@import url('https://db.onlinewebfonts.com/c/ccfdf10ba24124f7c35e43827aec5344?family=Noyh+R+W01+Medium');
+@import url('https://fonts.googleapis.com/css2?family=Exo&family=Poppins:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+
+*{
+    margin: 0;
+    font-family: "Noyh R W01 Medium";
+    box-sizing: border-box;
+   
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* NavBar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 0.6em;
+    backdrop-filter: blur(0.65rem);
+    justify-content: space-around;
+    z-index: 4;
+    font-family: "Noyh R W01 Medium";
+}
+
+.navtext {
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 1.7em;
+    color: #383a4a;
+    float: right;
+    font-family: "Noyh R W01 Medium";
+}
+
+/* Fonts*/
+
+.m-1 {
+    font-size: 1.1rem;
+}
+
+.m-2 {
+    font-size: 1.7rem;
+}
+
+.m-3 {
+    font-size: 2rem;
+}
+
+/* Containers */
+
+.content,
+.content1,
+.content2,
+.content4,
+.content3 {
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    min-height: 110vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 1em;
+    align-items: start;
+}
+
+.content1 {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content2 {
+    min-height: 110vh;
+}
+
+.content3 {
+    min-height: 185vh;
+    padding: 5.8em 0;
+    background-color: #38bdff;
+}
+
+/* Banner */
+
+.bannerCard {
+    height: 17em;
+    width: 30em;
+    padding: 2.3em 2em;
+    margin: 3em;
+    background-color: #7e6c6028;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    backdrop-filter: blur(10px);
+    border-radius: 3.1em;
+    box-shadow: none;
+}
+
+.bannerCard h1 {
+    font-size: 3.5rem;
+}
+
+.bannerCard p {
+    padding: 0.57em 3em 0.57em 0;
+    font-size: 1.3rem;
+}
+
+/* About */
+
+.aboutContainer {
+    display: flex;
+    margin: 2.3em 2em;
+}
+
+.aboutRight{
+    position: relative;    
+}
+
+.aboutLeft {
+    width: 50%;
+    color: #383a4a;
+    margin: auto 3em;
+    box-shadow: none;
+    padding: 1em 6em;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 4.1rem;
+}
+
+.aboutLeft p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.rightcard {
+    position: absolute;
+    height: 25em;
+    z-index: 1;
+    top: 2em;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 25em;
+    top: 1.5em;
+    left: 2em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 19em;
+    width: 19em;
+    top: 4.8em;
+    left: 3.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+/* FAQ */
+
+.faq {
+    width: 65%;
+    margin: 0 auto;
+    padding: 2em 100px;
+    border-radius: 20px;
+    min-height: 90vh;
+    color: #383a4a;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.faqPanel {
+    border-radius: 20px;
+}
+
+.faq h1 {
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 3.6rem;
+    padding: 10px 0;
+}
+
+/* Footer*/
+
+.footnote {
+    height: 30vh;
+    padding: 2rem 0;
+    background-color: #222fab;
+    text-align: center;
+    align-items: justify;
+    color: white;
+}
+
+.footnote h2 {
+    font-weight: 200;
+}
+
+/* Services */
+
+.Services {
+    display: flex;
+    gap: 50px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.serviceWrap {
+    background-color: #7e6c6009;
+    margin: 2em 3em;
+    backdrop-filter: blur(4px);
+    border-radius: 1.1rem;
+    margin-bottom: 300px;
+}
+
+.stitle {
+    margin: 0.75rem;
+    text-align: center;
+    font-size: 5rem;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+
+}
+
+.serviceCard {
+    width: 25rem;
+    height: 28rem;
+    margin: 0.7rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem #5a6773a4;
+    font-size: 1.3rem;
+}
+
+.serviceCard p {
+    text-align: justify;
+}
+
+/* Wave */
+
+.wave {
+    width: '100%';
+    position: 'absolute';
+    bottom: '0';
+}
+
+/* Login and Sign In*/
+
+.credentials {
+    margin: 3em auto;
+    width: 35rem;
+    min-height: 32rem;
+    max-height: 40rem;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 0;
+    border-radius: 1.4rem;
+}
+
+#cardcredentials{
+    padding-top: 100px;
+}
+
+.credentials h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    color: #383a4a;
+
+}
+
+.addPanel,
+.passPanel,
+.loginButtons {
+    margin: 1.02rem 1rem 0rem;
+    padding: 0.5rem 3rem;
+}
+
+#username,
+#password {
+    width: 100%;
+    height: 3rem;
+}
+
+.loginButtons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+}
+
+.loginb,
+.loginG,
+.signin {
+    width: 100%;
+    margin: 1.02rem 0rem 0rem;
+    font-size: 1.2rem;
+}
+
+.signin {
+    display: block;
+    align-items: baseline;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/*chat box*/
+.is-sticky {
+    position: fixed;
+    left: 98%;
+    top: 95%;
+    animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+    z-index: 999;
+}
+
+#click {
+    display: none;
+}
+
+label {
+    position: absolute;
+    right: 30px;
+    bottom: 20px;
+    height: 4rem;
+    width: 4rem;
+    background: -webkit-linear-gradient(left, #026698, #222fab);
+    text-align: center;
+    line-height: 55px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+label i {
+    position: absolute;
+    font-size: 1.2rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s ease;
+}
+
+label i#pis {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#click:checked~label i#pis {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+#click:checked~label i.pi {
+    opacity: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+.wrapper {
+    position: absolute;
+    right: 20px;
+    bottom: 2rem;
+    width: 20rem;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+#click:checked~.wrapper {
+    opacity: 1;
+    bottom: 5.7rem;
+    pointer-events: auto;
+}
+
+.wrapper .head-text {
+    line-height: 60px;
+    color: #fff;
+    border-radius: 15px 15px 0 0;
+    padding: 0 20px;
+    font-weight: 500;
+    font-size: 25px;
+    background: -webkit-linear-gradient(left, #222fab, #026698);
+}
+
+.wrapper .chat-box {
+    border: 0.2px solid #2230ab53;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 20px;
+    width: 100%;
+}
+
+.chat-box .desc-text {
+    color: #515365;
+    text-align: center;
+    line-height: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.chat-box form {
+    padding: 10px 15px;
+    margin: 20px 0;
+    border-radius: 25px;
+    border: 1px solid lightgrey;
+}
+
+.chat-box form .field {
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.chat-box form .field:last-child {
+    margin-bottom: 15px;
+}
+
+form .field input,
+form .field button,
+form .textarea textarea {
+    width: 100%;
+    height: 100%;
+    padding-left: 20px;
+    border: 1px solid lightgrey;
+    outline: none;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+form .field input:focus,
+form .textarea textarea:focus {
+    border-color: #38bdff;
+}
+
+form .field input::placeholder,
+form .textarea textarea::placeholder {
+    color: silver;
+    transition: all 0.3s ease;
+}
+
+form .field input:focus::placeholder,
+form .textarea textarea:focus::placeholder {
+    color: lightgrey;
+}
+
+.chat-box form .textarea {
+    height: 70px;
+    width: 100%;
+}
+
+.chat-box form .textarea textarea {
+    height: 100%;
+    border-radius: 50px;
+    resize: none;
+    padding: 15px 20px;
+    font-size: 16px;
+}
+
+.chat-box form .field button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    background: -webkit-linear-gradient(left, #222fab, #026698);
+    transition: all 0.3s ease;
+}
+
+.chat-box form .field button:active {
+    transform: scale(0.97);
+}
+
+.card{
+    margin: 1.4rem 2.1rem; 
+    min-height: 40rem; 
+    min-width: 50rem;
+    display: flex; 
+    background-color: #FFFFFF; 
+}
+
+
+/* inquiry */
+
+.inquiry {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80vh; 
+    width: 70%;
+    display: flex; 
+    background-color: #FFFFFF; 
+    border-radius: 30px;
+    
+}
+
+.user{
+    margin: 3px 0;
+    padding: 10px 0 13px 0;
+}
+
+.user:hover{
+    background-color: rgb(0, 204, 255);
+    transition: ease-in-out .5s;
+}
+
+.user.active{
+    background-color: #38bdff;
+}
+
+.userpfp3{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #7881d0;
+    float: left;
+    margin: 5px 10px 0 10px;
+    
+}
+
+.search{
+    margin-bottom: 100px;
+}
+
+.allChats {
+    position: relative;
+    height: inherit;
+    width: 45%;
+    background-color: #ffffff;
+    border: 1px solid #ececec;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    
+}
+
+.chatBox {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: inherit; 
+    width: 100%;
+    background-color: #ececec;
+    display: block;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.chatname{
+    background-color: #d0d0d07b;
+    width: 100%;
+    height: 6em;
+    border-top-right-radius: 30px;
+    display: flex;
+    
+}
+
+.chatname h1{
+    padding: 30px 0 0 15px;
+    
+}
+
+
+
+.contactpfp{
+    width: 60px;
+    height: 60px;
+    background-color: #222fab;
+    border-radius: 30px;
+    margin: 17px 0 0 20px;
+    float: left;
+}
+
+.chatcontent{
+    font-size: 23px;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: white;
+    justify-content: space-around;
+}
+
+
+.contactchat{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.contactpfp2{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #7881d0;
+    float: left;
+    margin: 0px 17px 0 20px;
+}
+
+.chatp p{
+    width: 500px;
+    padding: 20px;
+    background-color: #383a4a;
+    border-radius: 30px;
+}
+.userchat{
+    border-radius: 30px;
+    margin: 17px 0 0 0;
+    display: flex;
+}
+
+.userpfp{
+    width: 40px;
+    height: 40px;
+    border-radius: 30px;
+    background-color: #7881d0;
+    float: right;
+    margin: 0px 17px 0 20px;
+    gap: 20px;
+}
+
+.userchat p{
+    width: 500px;
+    padding: 20px;
+    background-color: rgb(0, 204, 255);
+    border-radius: 30px;
+    margin: 0 10px 0 0;
+}
+
+.chatHistory {
+    height: 40%;
+}
+
+
+.inputs {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    bottom: 1.5em;
+    left: 0;
+    height: 6.6vh;
+    width: 97%;
+    margin-left: 20px;
+}
+
+
+.p-input-icon-left{
+    width: 20em;
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.inputs textarea {
+    width: 83.2%;
+    height: inherit;
+    border-radius: 30px;
+    padding: 10px;
+    font-size: 20px;
+}
+
+.inputs Button {
+    border-radius: 0;
+    width: 15%;
+    height: inherit;
+    border-radius: 30px;    
+}
+
+/* Inquiry */
+
+
+/* Tables */
+
+.tableCard {
+    margin-top: 4em;
+    padding: 1.4rem 2.1rem;
+    min-width: 50rem;
+    min-height: 50vh;
+}
+
+/* Media Queries */
+/* 1080p */
+@media only screen and (max-width: 1920px) {
+    /* Fonts*/
+
+.m-1 {
+    font-size: 1.4rem;
+}
+
+.m-2 {
+    font-size: 2.5rem;
+}
+
+.m-3 {
+    font-size: 2rem;
+}
+
+/* Containers */
+
+.content,
+.content1,
+.content2,
+.content3 {
+    position: relative;
+    width: 100%;
+}
+.content {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: start;
+}
+
+.content1 {
+    min-height: 120vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content2 {
+    min-height: 10vh;
+}
+
+.content3 {
+    min-height: 185vh;
+    padding: 5.8em 0;
+    background-color: #38bdff;
+}
+
+
+/* Login and Sign In*/
+
+.credentials {
+    margin: 3em auto;
+    width: 35rem;
+    min-height: 32rem;
+    max-height: 40rem;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 0;
+    border-radius: 1.4rem;
+}
+
+.credentials h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    color: #383a4a;
+
+}
+
+
+.addPanel,
+.passPanel,
+.loginButtons {
+    margin: 1.02rem 1rem 0rem;
+    padding: 0.5rem 3rem;
+}
+
+#username,
+#password {
+    width: 100%;
+    height: 3rem;
+}
+
+.loginButtons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+}
+
+.loginb,
+.loginG,
+.signin {
+    width: 100%;
+    margin: 1.02rem 0rem 0rem;
+    font-size: 1.2rem;
+}
+
+.signin {
+    display: block;
+    align-items: baseline;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+/* Banner */
+
+.bannerCard {
+    height: 400px;
+    width: 600px;
+    padding: 2.3em 2em;
+    margin: 200px 200px;
+    background-color: #7e6c6028;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    backdrop-filter: blur(10px);
+    border-radius: 3.1em;
+    box-shadow: none;
+}
+
+.bannerCard h1 {
+    font-size: 90px;
+}
+
+.bannerCard p {
+    padding: 0.57em 3em 0.57em 0;
+    font-size: 30px;
+}
+
+/* About */
+
+.aboutContainer {
+    display: flex;
+    margin: 7.3em 10em;
+}
+
+.aboutRight{
+    position: relative;    
+    margin: 0 3em;
+}
+
+.aboutLeft {
+    width: 50%;
+    color: #383a4a;
+    margin: auto 1.7em;
+    box-shadow: none;
+    padding: 1em 2em;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 4.1rem;
+}
+
+.aboutLeft p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.rightcard {
+    position: absolute;
+    height: 36em;
+    z-index: 1;
+    left: 5em;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 36em;
+    top: -1.5em;
+    left: 7em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 25em;
+    width: 25em;
+    top: 4.8em;
+    left: 7.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+
+
+/* Wave */
+
+.wave {
+    width: '100%';
+    position: 'absolute';
+    bottom: '0';
+}
+}
+
+@media only screen and (max-width: 1440px) {
+/* About */
+
+.aboutContainer {
+    display: flex;
+    margin: 5em 7em;
+}
+
+.aboutRight{
+    position: relative;    
+    
+}
+
+.aboutLeft {
+    width: 50%;
+    color: #383a4a;
+    margin: auto 1.7em;
+    box-shadow: none;
+    padding: 1em 2em;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 4.1rem;
+}
+
+.aboutLeft p {
+    padding: .3em;
+    text-align: justify;
+}
+
+.rightcard {
+    position: absolute;
+    height: 26em;
+    z-index: 1;
+    left: 5em;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 26em;
+    top: -1.5em;
+    left: 7em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 20em;
+    width: 20em;
+    top: 4.8em;
+    left: 6.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+    /* Services */
+
+.Services {
+    display: flex;
+    gap: 50px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.serviceWrap {
+    background-color: #7e6c6009;
+    margin: 2em 3em;
+    backdrop-filter: blur(4px);
+    border-radius: 1.1rem;
+    margin-bottom: 300px;
+}
+
+.stitle {
+    margin: 0.75rem;
+    text-align: center;
+    font-size: 5rem;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+
+}
+
+.serviceCard {
+    width: 25rem;
+    height: 28rem;
+    margin: 0.7rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem #5a6773a4;
+    font-size: 1.1rem;
+}
+
+.serviceCard p {
+    text-align: justify;
+}
+
+/* Login and Sign In*/
+
+.credentials {
+    margin: 3em auto;
+    width: 35rem;
+    min-height: 32rem;
+    max-height: 40rem;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 0;
+    border-radius: 1.4rem;
+}
+
+.credentials h1 {
+    text-align: center;
+    font-size: 2.6rem;
+    color: #383a4a;
+
+}
+
+.addPanel,
+.passPanel,
+.loginButtons {
+    margin: 1.02rem 1rem 0rem;
+    padding: 0.5rem 3rem;
+}
+
+#username,
+#password {
+    width: 100%;
+    height: 3rem;
+}
+
+.loginButtons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+}
+
+.loginb,
+.loginG,
+.signin {
+    width: 100%;
+    margin: 1.02rem 0rem 0rem;
+    font-size: 1.2rem;
+}
+
+.signin {
+    display: block;
+    align-items: baseline;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+}
+
+@media only screen and (max-width: 1366px) {
+    /* Fonts*/
+
+.m-1 {
+    font-size: 1rem;
+}
+
+.m-2 {
+    font-size: 1.5rem;
+}
+
+.m-3 {
+    font-size: 2rem;
+}
+
+/* Containers */
+
+.content,
+.content1,
+.content2,
+.content3 {
+    position: relative;
+    width: 100%;
+}
+
+.lcontent{
+    
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: start;
+}
+.content {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: start;
+}
+
+.content1 {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content2 {
+    min-height: 90vh;
+}
+
+.content3 {
+    min-height: 185vh;
+    padding: 5.8em 0;
+    background-color: #38bdff;
+}
+
+
+
+
+/* Banner */
+
+.bannerCard {
+    height: 340px;
+    width: 600px;
+    padding: 2.3em 2em;
+    margin: 150px 200px;
+    background-color: #7e6c6028;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    backdrop-filter: blur(10px);
+    border-radius: 3.1em;
+    box-shadow: none;
+}
+
+.bannerCard h1 {
+    font-size: 70px;
+}
+
+.bannerCard p {
+    padding: 0.57em 3em 0.57em 0;
+    font-size: 30px;
+}
+
+/* About */
+
+.aboutContainer {
+    display: flex;
+    margin: 7.3em 10em;
+}
+
+.aboutRight{
+    position: relative;    
+    margin-left: -1em;
+}
+
+.aboutLeft {
+    width: 50%;
+    color: #383a4a;
+    margin: auto 1.5em;
+    box-shadow: none;
+    padding: 1em 2em;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 4.1rem;
+}
+
+.aboutLeft p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.rightcard {
+    position: absolute;
+    height: 26em;
+    z-index: 1;
+    left: 5em;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 26em;
+    top: -1.5em;
+    left: 7em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 20em;
+    width: 20em;
+    top: 4.8em;
+    left: 6.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+    /* Services */
+
+.Services {
+    display: flex;
+    gap: 50px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.serviceWrap {
+    background-color: #7e6c6009;
+    margin: 2em 3em;
+    backdrop-filter: blur(4px);
+    border-radius: 1.1rem;
+    margin-bottom: 300px;
+}
+
+.stitle {
+    margin: 0.75rem;
+    text-align: center;
+    font-size: 4rem;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+
+}
+
+.serviceCard {
+    width: 25rem;
+    height: 28rem;
+    margin: 0.7rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem #5a6773a4;
+    font-size: 1rem;
+}
+
+.serviceCard p {
+    text-align: justify;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Login and Sign In*/
+
+      
+/* Login and Sign In */
+
+#cardcredentials {
+    
+}
+
+.credentials {
+    margin: 3em auto;
+    width: 35rem;
+    height: auto; /* Adjusted to allow content to determine the height */
+    max-height: 40rem;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem 0;
+    border-radius: 1.4rem;
+    overflow: hidden; /* Add overflow: hidden to prevent content overflow */
+}
+
+.credentials h1 {
+    text-align: center;
+    font-size: 2.1rem;
+    color: #383a4a;
+}
+
+.addPanel,
+.passPanel,
+.loginButtons {
+    margin: 1.02rem 1rem 0rem;
+    padding: 0.5rem 3rem;
+}
+
+#username,
+#password {
+    width: 100%;
+    height: 3rem;
+}
+
+.loginButtons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+}
+
+.loginb,
+.loginG,
+.signin {
+    width: 100%;
+    margin: 1rem 0rem 0rem;
+    font-size: 1.2rem;
+}
+
+.signin {
+    display: block;
+    align-items: baseline;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Other existing styles */
+
+/* Add the following CSS to prevent content overflow */
+
+
+
+}
+
+@media only screen and (max-width: 1260px) {
+/* Fonts*/
+
+.m-1 {
+    font-size: 1.4rem;
+}
+
+.m-2 {
+    font-size: 1.7rem;
+}
+
+.m-3 {
+    font-size: 2rem;
+}
+
+/* Containers */
+
+.content,
+.content1,
+.content2,
+.content3 {
+    position: relative;
+    width: 100%;
+}
+.content {
+    min-height: 90vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: start;
+}
+
+.content1 {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content2 {
+    min-height: 80vh;
+}
+
+.content3 {
+    min-height: 155vh;
+    padding: 5.8em 0;
+    background-color: #38bdff;
+}
+
+
+/* Banner */
+
+.bannerCard {
+    height: 300px;
+    width: 500px;
+    padding: 2.3em 2em;
+    margin: 150px 150px;
+    background-color: #7e6c6028;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    backdrop-filter: blur(10px);
+    border-radius: 3.1em;
+    box-shadow: none;
+}
+
+.bannerCard h1 {
+    font-size: 50px;
+}
+
+.bannerCard p {
+    padding: 0.57em 3em 0.57em 0;
+    font-size: 30px;
+}
+
+/* About */
+
+.aboutContainer {
+    display: flex;
+    margin: 3.3em 10em;
+}
+
+.aboutRight{
+    position: relative;    
+}
+
+.aboutLeft {
+    width: 50%;
+    color: #383a4a;
+    margin: auto 1.7em;
+    box-shadow: none;
+    padding: 1em 2em;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 3.1rem;
+}
+
+.aboutLeft p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.rightcard {
+    position: absolute;
+    height: 23em;
+    z-index: 1;
+    left: 5em;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 23em;
+    top: -1em;
+    left: 7em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 15em;
+    width: 15em;
+    top: 4.8em;
+    left: 6.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+/* FAQ */
+
+.faq {
+    width: 65%;
+    margin: 0 auto;
+    padding: 2em 100px;
+    border-radius: 20px;
+    min-height: 90vh;
+    color: #383a4a;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.faqPanel {
+    border-radius: 20px;
+}
+
+.faq h1 {
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 3.6rem;
+    padding: 10px 0;
+}
+
+    /* Services */
+
+    .Services {
+        display: flex;
+        gap: 50px;
+        border-radius: 20px;
+        justify-content: center;
+    }
+    
+    .serviceWrap {
+        background-color: #7e6c6009;
+        margin: 2em 3em;
+        backdrop-filter: blur(4px);
+        border-radius: 1.1rem;
+        margin-bottom: 300px;
+    }
+    
+    .stitle {
+        margin: 0.75rem;
+        text-align: center;
+        font-size: 5rem;
+        color: #f7f8fc;
+        text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    
+    }
+    
+    .serviceCard {
+        width: 25rem;
+        height: 28rem;
+        margin: 0.7rem;
+        text-align: center;
+        box-shadow: 0 0.2rem 1rem #5a6773a4;
+        font-size: .9rem;
+        position: relative;
+    }
+    
+    .serviceCard p {
+        text-align: justify;
+    }
+    
+
+
+}
+
+@media only screen and (max-width: 1024px) {
+ /* Fonts*/
+
+.m-1 {
+    font-size: 1rem;
+}
+
+.m-2 {
+    font-size: 1.4rem;
+}
+
+.m-3 {
+    font-size: .9rem;
+}
+
+/* Containers */
+
+.content,
+.content1,
+.content2,
+.content3 {
+    position: relative;
+    width: 100%;
+}
+.content {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: start;
+}
+
+.content1 {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content2 {
+    min-height: 80vh;
+}
+
+.content3 {
+    min-height: 175vh;
+    padding: 5.8em 0;
+    background-color: #38bdff;
+}
+
+
+/* Banner */
+
+.bannerCard {
+    height: 270px;
+    width: 480px;
+    padding: 2.3em 2em;
+    margin: 150px 150px;
+    background-color: #7e6c6028;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    backdrop-filter: blur(10px);
+    border-radius: 3.1em;
+    box-shadow: none;
+}
+
+.bannerCard h1 {
+    font-size: 50px;
+}
+
+.bannerCard p {
+    padding: 0.57em 3em 0.57em 0;
+    font-size: 22px;
+}
+
+/* About */
+
+.aboutContainer {
+    display: flex;
+    margin: 3.3em 3em;
+}
+
+.aboutRight{
+    position: relative;    
+}
+
+.aboutLeft {
+    width: 50%;
+    color: #383a4a;
+    margin: auto .7em;
+    box-shadow: none;
+    padding: 1em 2em;
+    margin-left: 70px;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+.aboutLeft p {
+    padding: -20px;
+    text-align: justify;
+    font-size: -20px;
+}
+
+.rightcard {
+    position: absolute;
+    height: 21em;
+    z-index: 1;
+    left: 5em;
+    margin-top: 30px;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 17em;
+    top: -10px;
+    left: 7em;
+    z-index: 2;
+    margin-top: 30px;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 12em;
+    width: 12em;
+    top: 7.8em;
+    left: 6.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+/* FAQ */
+
+.faq {
+    width: 65%;
+    margin: 0 auto;
+    padding: 2em 100px;
+    border-radius: 20px;
+    min-height: 90vh;
+    color: #383a4a;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.faqPanel {
+    border-radius: 20px;
+}
+
+.faq h1 {
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+
+/* Services */
+
+.Services {
+    display: flex;
+    gap: 50px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.serviceWrap {
+    background-color: #7e6c6009;
+    margin: 2em 3em;
+    backdrop-filter: blur(4px);
+    border-radius: 1.1rem;
+    margin-bottom: 300px;
+}
+
+.stitle {
+    margin: 0.75rem;
+    text-align: center;
+    font-size: 3rem;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+
+}
+
+.m-0{
+    font-size: 13px;
+}
+
+.serviceCard {
+    width: 25rem;
+    height: 28rem;
+    margin: 0.7rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem #5a6773a4;
+    font-size: .7rem;
+    position: relative;
+}
+
+.serviceCard p {
+    text-align: justify;
+}
+
+/* Login and Sign In*/
+
+      
+#cardcredentials{
+  
+}
+
+
+.credentials {
+    width: 30rem; /* Adjust the width as needed */
+    height: 70px; /* Adjust the height as needed */
+    max-height: 80px; /* Adjust the max-height as needed */
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    border-radius: 1.4rem;
+}
+
+.credentials h1 {
+    text-align: center;
+    font-size: 2.1rem;
+    color: #383a4a;
+        
+}
+
+.addPanel,
+.passPanel,
+.loginButtons {
+    margin: .9rem 1rem 0rem;
+    padding: 0.5rem 3rem;
+}
+
+#username,
+#password {
+    width: 100%;
+    height: 2rem;
+}
+
+.loginButtons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+}
+
+.loginb,
+.loginG,
+.signin {
+    width: 100%;
+    margin: .6rem 0rem 0rem;
+    font-size: 1rem;
+}
+
+.signin {
+    display: block;
+    align-items: baseline;
+    text-align: center;
+    font-size: .9rem;
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 1440px) {
+/* About */
+
+.aboutContainer {
+    display: flex;
+    margin: 5em 7em;
+}
+
+.aboutRight{
+    position: relative;    
+    
+}
+
+.aboutLeft {
+    width: 50%;
+    color: #383a4a;
+    margin: auto 1.7em;
+    box-shadow: none;
+    padding: 1em 2em;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 4.1rem;
+}
+
+.aboutLeft p {
+    padding: .3em;
+    text-align: justify;
+}
+
+.rightcard {
+    position: absolute;
+    height: 26em;
+    z-index: 1;
+    left: 5em;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 26em;
+    top: -1.5em;
+    left: 7em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 20em;
+    width: 20em;
+    top: 4.8em;
+    left: 6.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+    /* Services */
+
+.Services {
+    display: flex;
+    gap: 50px;
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.serviceWrap {
+    background-color: #7e6c6009;
+    margin: 2em 3em;
+    backdrop-filter: blur(4px);
+    border-radius: 1.1rem;
+    margin-bottom: 300px;
+}
+
+.stitle {
+    margin: 0.75rem;
+    text-align: center;
+    font-size: 5rem;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+
+}
+
+.serviceCard {
+    width: 25rem;
+    height: 28rem;
+    margin: 0.7rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem #5a6773a4;
+    font-size: 1.1rem;
+}
+
+.serviceCard p {
+    text-align: justify;
+}
+
+
+}
+
+@media only screen and (max-width: 480px) {
+/* Fonts */
+.m-1 {
+    font-size: 1rem;
+}
+
+.m-2 {
+    font-size: 1rem;
+}
+
+.m-3 {
+    font-size: 1.5rem;
+}
+
+/* Containers */
+.content,
+.content1,
+.content2,
+.content3 {
+    position: relative;
+    width: 100%;
+}
+
+.content {
+    min-height: 60vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    align-items: start;
+    background-attachment: fixed; /* Fixed background */
+    overflow-x: hidden;
+}
+
+.content1 {
+    min-height: 100vh;
+    background: url('src/assets/images/Background.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.content2 {
+    min-height: 110vh;
+}
+
+.content3 {
+    min-height: 185vh;
+    padding: 5.8em 0;
+    background-color: #38bdff;
+}
+
+/* Banner */
+.bannerCard {
+    height: 240px;
+    width: 100vw;
+    margin: 50px 0px;
+    background-color: #7e6c6028;
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+    backdrop-filter: blur(10px);
+    box-shadow: none;
+    position: relative;
+    border-radius: 0px;
+}
+
+.bannerCard h1 {
+    font-size: 10vw; /* Relative font size */
+}
+
+.bannerCard p {
+    padding: 0.57em 3em 0.57em 0;
+    font-size: 4.5vw; /* Relative font size */
+}
+
+/* About */
+.aboutContainer {
+    display: flex;
+    margin: 7.3em 0; /* Adjusted margin */
+    flex-direction: column;
+    
+}
+
+.aboutRight {
+    position: relative;
+}
+
+.aboutLeft {
+    width: 100%; /* Full width on small screens */
+    color: #383a4a;
+    margin: auto;
+}
+
+.aboutLeft h1 {
+    text-align: center;
+    font-size: 2.1rem;
+}
+
+.aboutLeft p {
+    padding: 1em;
+    text-align: justify;
+}
+
+.rightcard {
+    position: absolute;
+    height: 20em;
+    z-index: 1;
+   margin: 0 auto;
+}
+
+.rightcard2 {
+    position: absolute;
+    height: 20em;
+    top: -1.5em;
+    z-index: 2;
+}
+
+.aboutPic {
+    position: absolute;
+    border-radius: 50%;
+    height: 15em;
+    width: 15em;
+    top: 3.8em;
+    box-shadow: 9.7px 6px #4dc5d8;
+    z-index: 3;
+}
+
+/* Services */
+.Services {
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Adjusted gap */
+    border-radius: 20px;
+    justify-content: center;
+}
+
+.serviceWrap {
+    background-color: #7e6c6009;
+    margin: 1em;
+    backdrop-filter: blur(4px);
+    border-radius: 1.1rem;
+    margin-bottom: 30px; /* Adjusted margin */
+}
+
+.stitle {
+    margin: 0.75rem;
+    text-align: center;
+    font-size: 9vw; /* Relative font size */
+    color: #f7f8fc;
+    text-shadow: 0.15rem 0.1rem #495057a6, 0 0.2rem 0.7rem #6f7d8abf;
+}
+
+.serviceCard {
+    width: 90%;
+    height: 28rem;
+    margin: 0.7rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 1rem #5a6773a4;
+    font-size: 1rem;
+}
+
+.serviceCard p {
+    text-align: justify;
+}
+
+/* FAQ */
+
+.faq {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em 20px;
+    border-radius: 20px;
+    min-height: 90vh;
+    color: #383a4a;
+    background-color: aliceblue;
+    position: relative;
+}
+
+.faqPanel {
+    border-radius: 20px;
+}
+
+.faq h1 {
+    margin: 10px 10px;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 10px 0;
+}
+
+.footnote{
+    font-size: 15px;
+}
+
+/* Login and Sign In*/
+
+      
+#cardcredentials{
+    padding-top: 70px;
+    min-height: 100vh;
+}
+
+
+.credentials {
+    margin: 2em auto;
+    width: 100%;
+    min-height: 76vh;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 0;
+    position: relative;
+}
+
+.credentials h1 {
+    text-align: center;
+    font-size: 2.1rem;
+    color: #383a4a;
+        
+}
+
+.addPanel,
+.passPanel,
+.loginButtons {
+    margin: 1.02rem 1rem 0rem;
+    padding: 0.5rem 3rem;
+}
+
+#username,
+#password {
+    width: 100%;
+    height: 3rem;
+}
+
+.loginButtons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0rem;
+}
+
+.loginb,
+.loginG,
+.signin {
+    width: 100%;
+    margin: 1rem 0rem 0rem;
+    font-size: 1.2rem;
+}
+
+.signin {
+    display: block;
+    align-items: baseline;
+    text-align: center;
+    font-size: 1rem;
+}
+
+}
+
+
+
+
+
+/*
+/* Extra small devices (phones, 600px and down) */
+/*
+@media only screen and (max-width: 600px) {...}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/*
+@media only screen and (min-width: 600px) {...}
+/* Medium devices (landscape tablets, 768px and up) */
+/*
+@media only screen and (min-width: 768px) {...}
+/* Large devices (laptops/desktops, 992px and up) */
+/*
+@media only screen and (min-width: 992px) {...}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/*
+@media only screen and (min-width: 1200px) {...} 
+*/

@@ -1,0 +1,357 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins:wght@400;500&display=swap');
+@import url(https://db.onlinewebfonts.com/c/ccfdf10ba24124f7c35e43827aec5344?family=Noyh+R+W01+Medium);
+
+*{
+  margin: 0;
+  box-sizing: border-box; 
+  
+}
+
+.Content1{
+  min-height: 100vh;
+  background: url('src/assets/Background.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+  
+  align-items: start;
+}
+
+.wave{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  background: url('src/assets/waves/wave2.png') no-repeat;
+  
+}
+
+.m-0{
+  font-size: 40px;
+  margin-top: 20px;
+  color: rgb(255, 255, 255);
+  text-shadow: black 1px;
+  text-shadow: 0px 1px 3px gray;
+}
+
+.title{
+  font-family: "Noyh R W01 Medium";
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  padding: 20px 40px;
+  text-shadow: 0px 1px 2px gray;
+}
+
+
+.title{
+  height: 510px;
+  width: 750px;
+  background: rgba(0, 0, 0, .1);
+  backdrop-filter: blur(10px);
+  margin: 150px 250px;
+  border-radius: 50px;
+  box-shadow: none;
+}
+
+.navbar{
+  padding: 15px;
+  backdrop-filter: blur(10px);
+  font-family: "Noyh R W01 Medium";
+  justify-content: space-around;
+}
+
+
+.navtext{
+  font-size: 1.15rem;
+  ;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 1.7rem; 
+  color: rgb(0, 0, 0);
+  
+  float: right;
+  z-index: 1;
+}
+/* content2 */
+
+
+
+.content2{
+  margin: 0px auto 7% auto;
+  font-family: "Noyh R W01 Medium";
+  display: flex;
+}
+
+.infocard{
+  height: 60px;
+  width: 650px;
+  /* background-color: rgb(82, 173, 254); */
+  color: black;
+  margin: 150px 250px;
+  border-radius: 50px;
+  box-shadow: none;
+  font-family: "Noyh R W01 Medium";
+}
+
+.infocard h1{
+  text-align: center;
+  font-size: 60px;
+}
+.m-1{
+  padding: 40px 40px;
+  text-align: justify;
+  font-size: 35px;
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+}
+
+.rightcard{
+  align-items: right;
+  background: url('src/assets/waves/card1.png') no-repeat;
+  width: 100%;
+  margin-top: 150px;
+  
+}
+.rightcard2{
+  background: url('src/assets/waves/card2.png') no-repeat;
+  margin-left: 10px;
+  height: 100vh;
+  margin: -50px 50px;
+ 
+}
+
+.wave2{
+  position: absolute;
+  width: 100%;
+  background-size: cover;
+  height: 300px;
+  background: url('src/assets/waves/bwave.png') no-repeat;
+  margin: -460px 0;
+}
+
+
+
+
+
+
+.content3{
+  padding: 9% 0;
+  background-color: #38bdff;
+  font-family: "Noyh R W01 Medium";
+}
+
+.faq{
+  font-family: "Noyh R W01 Medium";
+  width: 60%;
+  padding: 20px 100px;
+  margin: 0 auto;
+  border-radius: 20px;
+  height: 850px;
+  width: 1000px;
+  background-color: aliceblue;
+  position: relative;
+}
+
+.faq h1{
+  margin: 10px 10px;
+  text-align: center;
+  font-size: 60px;
+  padding: 10px 0;
+}
+
+.m-2{
+  font-size: 20px;
+  font-family: "Noyh R W01 Medium";
+}
+
+.m-3{
+  font-size: 20px;
+}
+
+.field{
+  border-radius: 20px;
+  font-family: "Noyh R W01 Medium";
+}
+
+.lastwave{
+  background: url('src/assets/lastwave.png') no-repeat;
+  height: 500px;
+  width: 100%;
+  margin-top: -500px;
+}
+
+.footnote{
+  background-color: #222fab;
+  padding: 50px;
+  text-align: center;
+  align-items: justify;
+  font-family: "Noyh R W01 Medium";
+  color: white;
+  margin-top: -60px;
+}
+
+.footnote h1{
+  margin-bottom: 10px;
+  font-size: 40px
+}
+
+.footnote h2{
+  font-weight: 200;
+}
+
+.is-sticky{
+  position: sticky;
+  font-family: "Noyh R W01 Medium"; 
+  animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+}
+
+
+
+
+#click{
+  display: none;
+}
+
+label{
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  height: 75px;
+  width: 75px;
+  background: -webkit-linear-gradient(left, #026698, #222fab);
+  text-align: center;
+  line-height: 55px;
+  border-radius: 50px;
+  font-size: 30px;
+  color: #fff;
+  cursor: pointer;
+}
+label i{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.4s ease;
+}
+label i.pis{
+  opacity: 0;
+  pointer-events: none;
+}
+#click:checked ~ label i.pis{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+#click:checked ~ label i.pi{
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) rotate(180deg);
+}
+.wrapper{
+  position: absolute;
+  right: 30px;
+  bottom: 0px;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 15px 20px rgba(0,0,0,0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+#click:checked ~ .wrapper{
+  opacity: 1;
+  bottom: 105px;
+  pointer-events: auto;
+}
+.wrapper .head-text{
+  line-height: 60px;
+  color: #fff;
+  border-radius: 15px 15px 0 0;
+  padding: 0 20px;
+  font-weight: 500;
+  font-size: 25px;
+  background: -webkit-linear-gradient(left, #222fab, #026698);
+}
+.wrapper .chat-box{
+  padding: 20px;
+  width: 100%;
+}
+.chat-box .desc-text{
+  color: #515365;
+  text-align: center;
+  line-height: 25px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.chat-box form{
+  padding: 10px 15px;
+  margin: 20px 0;
+  border-radius: 25px;
+  border: 1px solid lightgrey;
+}
+.chat-box form .field{
+  height: 50px;
+  width: 100%;
+  margin-top: 20px;
+}
+.chat-box form .field:last-child{
+  margin-bottom: 15px;
+}
+form .field input,
+form .field button,
+form .textarea textarea{
+  width: 100%;
+  height: 100%;
+  padding-left: 20px;
+  border: 1px solid lightgrey;
+  outline: none;
+  border-radius: 25px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+form .field input:focus,
+form .textarea textarea:focus{
+  border-color: #38bdff;
+}
+form .field input::placeholder,
+form .textarea textarea::placeholder{
+  color: silver;
+  transition: all 0.3s ease;
+}
+form .field input:focus::placeholder,
+form .textarea textarea:focus::placeholder{
+  color: lightgrey;
+}
+.chat-box form .textarea{
+  height: 70px;
+  width: 100%;
+  font-family: "Noyh R W01 Medium";
+}
+.chat-box form .textarea textarea{
+  height: 100%;
+  border-radius: 50px;
+  resize: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-family: "Noyh R W01 Medium"; 
+}
+.chat-box form .field button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  background: -webkit-linear-gradient(left, #222fab, #026698);
+  transition: all 0.3s ease;  
+  font-family: "Noyh R W01 Medium"; 
+}
+.chat-box form .field button:active{
+  transform: scale(0.97);
+}
+
+@media only screen and (max-width: 1980px) {
+
+}

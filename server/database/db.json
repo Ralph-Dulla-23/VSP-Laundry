@@ -1,0 +1,36 @@
+{
+    "user": [
+        {
+            "firstname": "Harold",
+            "lastname": "Ju",
+            "email": "sample01@email.com",
+            "password": "password1234",
+            "usertype": "Admin",
+            "Activationstatus": true,
+            "staff": true,
+            "Position": "Manager"
+        },
+        {
+            "firstname": "Ming",
+            "lastname": "Cooper",
+            "email": "sample02@email.com",
+            "password": "password0987",
+            "usertype": "Admin",
+            "Activationstatus": true,
+            "staff": true,
+            "Position": "Customer Service"
+        },
+        {
+            "firstname": "Kira",
+            "lastname": "Mertens",
+            "email": "sample09@email.com",
+            "password": "ShakirShakira",
+            "usertype": "User",
+            "Activationstatus": true,
+            "staff": false,
+            "Position": "n/a"
+        }
+    ]
+    
+
+}
