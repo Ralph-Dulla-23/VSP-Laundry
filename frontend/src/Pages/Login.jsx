@@ -13,6 +13,8 @@ function Login() {
 
   const navigate = useNavigate();
   const handleLoginToDashboard = () => navigate('/Dashboard');
+  const handleLoginBack = () => navigate('/');
+
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -27,17 +29,26 @@ function Login() {
     })
     .then ( response => response.json() )
     .then ( data => {console.log( data );
-                    Test(data.login, data.usertype);
+                    Test(data.login, data.person.usertype);
                   })
     
     console.log( "clicked login" )
 
-    
   }
 
   function Test(login, usertype){
     if(login===true){
-      handleLoginToDashboard();
+
+      console.log(usertype)
+      if(usertype == 'Admin'){
+        handleLoginToDashboard();
+        return;
+      } else {
+        handleLoginBack();
+      return;
+      }
+
+      
     }
   }
   

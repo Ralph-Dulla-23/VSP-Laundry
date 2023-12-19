@@ -1,12 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import NavBarAdmin from '../../components/NavBarAdmin'
-import { staffData } from '../../assets/staffData.js';
 
 import { DataTable } from 'primereact/datatable';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';
 import { Tag } from 'primereact/tag';
-import { StaffData } from './ForStaff/StaffData.jsx';
 
 function Staff() {
 
