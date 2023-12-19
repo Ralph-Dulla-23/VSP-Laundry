@@ -1,42 +1,51 @@
-
 import { useState } from 'react';
-
 import { InputText } from 'primereact/inputtext';
 import { Card } from 'primereact/card';
 import { Password } from 'primereact/password';
 import { Button } from 'primereact/button';
-
+import { Toast } from 'primereact/toast';
 import NavBar from '../components/NavBar';
 
 function Signin() {
-
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfPassword] = useState('');
+  const toast = useRef(null);
 
-  function handleRegister ( event ) {
+  function handleRegister(event) {
     event.preventDefault();
 
-    if(name == "" || email == "" || password == "" || confirmPassword == ""){
+    if (name === '' || email === '' || password === '' || confirmPassword === '') {
+      showToast('Please fill in all fields.');
       return;
     }
 
-    if(password!=confirmPassword){
+    if (password !== confirmPassword) {
+      showToast('Passwords do not match.');
       return;
     }
 
     let userData = { user: name, email: email, password: password };
 
-    fetch( '/api/reg', {
+    fetch('/api/reg', {
       method: 'post',
       headers: { 'content-type': 'application/json' },
-      body: JSON.stringify ( userData )
+      body: JSON.stringify(userData),
     })
-    .then ( response => response.json() )
-    .then ( data => {console.log( data );
-                  })
+      .then((response) => response.json())
+      .then((data) => {
+        console.log(data);
+        if (data.error) {
+          showToast(data.error);
+        } else {
+          showToast('Account created successfully.');
+        }
+      });
+  }
 
+  function showToast(message) {
+    toast.current.show({ severity: 'error', summary: 'Error', detail: message, life: 3000 });
   }
 
   return (

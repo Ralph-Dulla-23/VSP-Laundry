@@ -34,9 +34,9 @@ function Dashboard() {
   );
 
 
-  useEffect(() => {
-  DashboardData.getProductsMini().then(data => setJob(data));
-  }, []);
+  // useEffect(() => {
+  // DashboardData.getProductsMini().then(data => setJob(data));
+  // }, []);
 
   const statusBodyTemplate = (job) => {
     return <Tag value={job.Progress} severity={getSeverity(job)} style={{ fontSize: '1rem', fontWeight: '100', width: '4.5em' }}></Tag>;
