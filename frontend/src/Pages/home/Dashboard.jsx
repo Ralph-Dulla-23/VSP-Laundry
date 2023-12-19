@@ -33,6 +33,10 @@ function Dashboard() {
 
   );
 
+  useEffect(() => {
+  
+  }, []);
+
 
   // useEffect(() => {
   // DashboardData.getProductsMini().then(data => setJob(data));

@@ -8,9 +8,13 @@ import { useNavigate } from 'react-router-dom';
 import { Toast } from 'primereact/toast';
 
 function Login() {
+
   const toast = useRef(null);
+
   const navigate = useNavigate();
   const handleLoginToDashboard = () => navigate('/Dashboard');
+  const handleBack = () => navigate('/');
+
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
 
@@ -37,7 +41,14 @@ function Login() {
 
   function Test(login, usertype) {
     if (login === true) {
-      handleLoginToDashboard();
+      
+      if(usertype = "Admin"){ //dont remove this pls
+        handleLoginToDashboard();
+      }else {
+        handleBack();
+      }
+      return;
+
     } else {
       // Show toast for incorrect login
       showIncorrectLoginToast();
@@ -52,7 +63,7 @@ function Login() {
       detail: 'Invalid username or password. Please try again.',
     });
   }
-  
+
   return (
     <>
       <NavBar />
