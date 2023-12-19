@@ -33,17 +33,46 @@ const checkPass = ( username, password ) => {
     var person = {};
 
     for ( var i in userdata["user"] ) {
-        if ( (!login) && userdata["user"][i].email === username && userdata["user"][i].password === password ) {
-            var usertype = userdata["user"][i].usertype;;
+
+        if ( (!login) && userdata["user"][i].email == username && userdata["user"][i].password == password ) {
+            var usertype = userdata["user"][i].usertype;
             var firstname = userdata["user"][i].firstname;
             var lastname = userdata["user"][i].lastname;
             person = {firstname: firstname, lastname:lastname, usertype: usertype };
             login = true;
+            break;
         }
     }
 
     
     return { login: login, person: person };
+}
+
+const checkExist = ( username, email, password ) => {
+
+    var person = {};
+
+    for ( var i in userdata["user"] ) {
+
+        if ( userdata["user"][i].email == email) {
+            return;
+        }
+    }
+
+    var name = username;
+    var email = email;
+    var password = password;
+
+    person = {
+        name: name,
+        email: email,
+        password: password,
+        usertype: "User",
+        Position: "n/a"
+
+    }
+    
+    return { person: person };
 }
 
 const checkOrder = ( username, password ) => {
@@ -66,9 +95,17 @@ const checkOrder = ( username, password ) => {
 /* To handle authentication request */
 app.post("/api/auth", (req, res) => {
     console.log ( "AUTH: Received data ..." );
-    console.log ( req.body );  
+    console.log ( req.body);  
     let {user, password} = req.body;
-    res.json ( checkPass(String(user).trim(), String(password).trim()) );
+    res.json ( checkPass(String(user).trim(), String(password).trim()) ); 
+});
+
+// To see exisitng account once register
+app.post("/api/reg", (req, res) => {
+    console.log ( "AUTH: Received data ..." );
+    console.log (req.body);  
+    let {user, email, password} = req.body;
+    res.json ( checkExist(String(user), String(email).trim(), String(password).trim()) ); 
 });
   
 app.listen ( PORT, () => {

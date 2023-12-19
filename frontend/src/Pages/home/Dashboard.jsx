@@ -4,14 +4,11 @@ import NavBarAdmin from '../../components/NavBarAdmin'
 import AddOrderForm from '../../components/AddOrderForm';
 import OrderDesc from '../../components/OrderDesc';
 
-import { jobData } from '../../assets/jobData';
-
 import { DataTable } from 'primereact/datatable';
 import { Tag } from 'primereact/tag';
 import { Column } from 'primereact/column';
 import { Button } from 'primereact/button';
 import { Dialog } from 'primereact/dialog';
-import { DashboardData } from './For Dashboard/DashboardData.jsx';
 
 
 function Dashboard() {
