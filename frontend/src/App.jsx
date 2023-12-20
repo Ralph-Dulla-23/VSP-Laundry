@@ -155,7 +155,7 @@ function App() {
       <div className="content4">
         <div className="serviceWrap">
 
-          <h1 className='stitle'>Services</h1>
+          <h1>Services</h1>
 
           <div className="Services">
 

@@ -20,12 +20,20 @@
             "password": "ShakirShakira",
             "usertype": "User",
             "Position": "n/a"
+        },
+        {
+            "name": "Mary Jane Doe",
+            "email": "sample12@email.com",
+            "password": "123",
+            "usertype": "Admin",
+            "Position": "Staff"
         }
     ],
-    "JobOrders": [
+    "jobOrders": [
         {
+            "ID": 1,
             "Customer": "Shelly",
-            "Service": "Wash",
+            "Service": "Dry Clean",
             "Items": [
                 {
                     "Item": "item sample 01",
@@ -33,14 +41,15 @@
                     "Quantity": "1"
                 }
             ],
-            "Datarecieved": "Recieve Sample 01",
-            "Datetoclaim": "1/1/2024",
-            "Progress": "not finished",
-            "Report": "Report sample"
+            "DateReceived": "12/23/2023",
+            "Datetoclaim": "12/28/2023",
+            "Progress": "Claimed",
+            "Report": null
         },
         {
+            "ID": 2,
             "Customer": "Shaggy",
-            "Service": "Dry Wash",
+            "Service": "Basic Services",
             "Items": [
                 {
                     "Item": "item sample 02",
@@ -48,14 +57,15 @@
                     "Quantity": "2"
                 }
             ],
-            "Datarecieved": "Recieve Sample 02",
+            "DateReceived": "12/28/2023",
             "Datetoclaim": "1/1/2024",
-            "Progress": "not finished",
-            "Report": "Report sample"
+            "Progress": "Drying",
+            "Report": null
         },
         {
+            "ID": 3,
             "Customer": "Danny",
-            "Service": "Dry Wash",
+            "Service": "Special Laundry",
             "Items": [
                 {
                     "Item": "item sample 03",
@@ -63,10 +73,10 @@
                     "Quantity": "3"
                 }
             ],
-            "Datarecieved": "Recieve Sample 03",
+            "DateReceived": "12/28/2023",
             "Datetoclaim": "1/1/2024",
-            "Progress": "not finished",
-            "Report": "Report sample"
+            "Progress": "Washing",
+            "Report": null
         }
     ]
 }

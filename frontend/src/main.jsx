@@ -54,11 +54,11 @@ const router = createBrowserRouter([
 
 i18next.init({
   
-  interpolation: { escapeValue: false },  // React already does escaping
-    lng: 'en',                              // language to use
+  interpolation: { escapeValue: false },  
+    lng: 'en',                             
     resources: {
         en: {
-            common: common_en               // 'common' is our custom namespace
+            common: common_en               
         },
         tg: {
             common: common_tg
