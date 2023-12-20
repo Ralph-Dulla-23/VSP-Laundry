@@ -17,6 +17,7 @@ function Dashboard() {
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [visible, setVisible] = useState(false);
   const [visible2, setVisible2] = useState(false);
+  let jsonArray = [];
 
   const header = (
 
@@ -33,10 +34,19 @@ function Dashboard() {
 
   );
 
-
-  // useEffect(() => {
-  // DashboardData.getProductsMini().then(data => setJob(data));
-  // }, []);
+  useEffect(() => {
+    fetch('/api/getJobOrders', {
+      method: 'post',
+      headers: { 'content-type': 'application/json' },
+    })
+      .then(response => response.json())
+      .then((data) => {
+        
+        jsonArray = data;
+        console.log(jsonArray);
+        setJob(jsonArray);
+      })
+  }, []);
 
   const statusBodyTemplate = (job) => {
     return <Tag value={job.Progress} severity={getSeverity(job)} style={{ fontSize: '1rem', fontWeight: '100', width: '4.5em' }}></Tag>;
@@ -52,7 +62,7 @@ function Dashboard() {
 
   const getSeverity = (job) => {
 
-    switch (job.Status) {
+    switch (job.Progress) {
       case 'Claimed':
         return 'success';
 
@@ -60,7 +70,7 @@ function Dashboard() {
         return 'info';
 
       case 'Drying':
-        return 'help';
+        return 'primary';
 
       case 'Washing':
         return 'primary';
@@ -90,9 +100,9 @@ function Dashboard() {
             selection={selectedProduct} onRowSelect={onRowSelect} onSelectionChange={(e) => setSelectedProduct(e.value)} 
             tableStyle={{ height: '20rem' }}>
 
-            <Column field="Customer" header="ID" alignHeader={'center'} style={{ textAlign: 'center' }}></Column>
+            <Column field="ID" header="ID" alignHeader={'center'} style={{ textAlign: 'center' }}></Column>
             <Column field="Service" header="Service" alignHeader={'center'} style={{ textAlign: 'center' }}></Column>
-            <Column field="Datarecieved" header="Date Received" alignHeader={'center'} style={{ textAlign: 'center' }}></Column>
+            <Column field="DateReceived" header="Date Received" alignHeader={'center'} style={{ textAlign: 'center' }}></Column>
             <Column field="Progress" header="Status" body={statusBodyTemplate} alignHeader={'center'} style={{ textAlign: 'center' }}></Column>
 
           </DataTable>

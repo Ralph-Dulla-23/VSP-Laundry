@@ -2,10 +2,11 @@ import React from 'react'
 import { Menubar } from 'primereact/menubar';
 import { useNavigate } from 'react-router-dom';
 import logo from '../assets/logo.png'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
+import { useTranslation } from "react-i18next";
 import { ToggleButton } from 'primereact/togglebutton';
-        
+
 
 // ... (your imports)
 
@@ -15,6 +16,18 @@ function NavBar() {
     const handleHomeClick = () => navigate('/');
     const handleServiceClick = () => navigate('/Services');
     const handleLoginClick = () => navigate('/Login');
+    const [t, i18n] = useTranslation('common');
+    
+    useEffect(() => {
+
+        
+        if (checked == true){
+            i18n.changeLanguage('tg')
+        }else {
+            i18n.changeLanguage('en')
+        }
+        
+    });
 
     const items = [
         {

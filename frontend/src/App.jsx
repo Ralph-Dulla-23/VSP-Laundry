@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import BasicServe from './assets/images/BasicServices.jpg'
 import Rush from './assets/images/RushLaundry.jpg'
@@ -24,6 +25,8 @@ function App() {
   const [visible2, setVisible2] = useState(false);
   const [visible3, setVisible3] = useState(false);
   const [visible4, setVisible4] = useState(false);
+
+  const { t } = useTranslation("common");
 
   const header1 = (
     <img alt="Card" src={BasicServe} style={{ width: '100%', height: '8rem' }} />
@@ -100,173 +103,158 @@ function App() {
         <p className="scard4">Stuffed Toy (Large)</p>
         <p className="scard4">Stuffed Toy (X-Large)</p>
       </Dialog>
-      </>
-      );
+    </>
+  );
 
 
   return (
 
     <>
 
-<NavBar />
+      <NavBar />
 
-<MessageFab />
+      <MessageFab />
 
-<div className="content" style={{ marginTop: '2.9em' }}>
+      <div className="content" style={{ marginTop: '2.9em' }}>
 
-  <div className="bannerCard">
-  
-    <h1>Wash Your Stress Away!</h1>
-    <p>
-      Wash your stress away, one load at a time,
-      because every laundry day is a fresh start.
-    </p>
+        <div className="bannerCard">
 
-  </div>
+          <h1>{t('app.banner.title')}</h1>
+          <p>
+          {t('app.banner.text')}
+          </p>
 
-  <Wave1 />
+        </div>
 
-</div>
+        <Wave1 />
 
-<div className="content2">
+      </div>
 
-  <div className="aboutContainer">
+      <div className="content2">
 
-    <div className='aboutLeft'>
+        <div className="aboutContainer">
 
-      <h1>About</h1>
+          <div className='aboutLeft'>
 
-      <p className="m-2">
-        VSP Laundry Shop was founded in 2012 by a group of laundry enthusiasts who shared a
-        common vision: to provide a comprehensive and customer-centric laundry experience.
-        Their passion for laundry stemmed from the belief that doing laundry should be easy, efficient,
-        and accessible to everyone. With that aspiration, VSP Laundry Shop was born.
-      </p>
+            <h1>About</h1>
 
-    </div>
+            <p className="m-2">
+            {t('app.about.text')}
+            </p>
 
-    <AboutRight />
+          </div>
 
-  </div>
+          <AboutRight />
+
+        </div>
 
 
 
-</div>
+      </div>
 
-<div className="content4">
-<div className="serviceWrap">
+      <div className="content4">
+        <div className="serviceWrap">
 
-<h1 className='stitle'>Services</h1>
+          <h1>Services</h1>
 
-<div className="Services">
+          <div className="Services">
 
-<Card title="Basic Services" footer={footer1} header={header1} className="serviceCard">
-<p className="m-0">
-Embrace the simplicity of pristine laundry care with our basic services at VSP Laundry Shop. Our advanced washing and drying technologies, coupled with skilled hands, breathe new 
-life into your everyday garments. 
-</p>
-</Card>
+            <Card title="Basic Services" footer={footer1} header={header1} className="serviceCard">
+              <p className="m-0">
+              {t('app.services.1.text')}
+              </p>
+            </Card>
 
-<Card title="Rush Laundry" footer={footer2} header={header2} className="serviceCard">
-<p className="m-0">
-Life moves fast, and so do we! Our Rush Laundry service is designed for those moments when time is of the essence. Drop off your laundry, and we'll prioritize it, ensuring a swift and thorough turnaround.
- 
-</p>
-</Card>
+            <Card title="Rush Laundry" footer={footer2} header={header2} className="serviceCard">
+              <p className="m-0">
+              {t('app.services.2.text')}
+              </p>
+            </Card>
 
-<Card title="Dry Clean" footer={footer3} header={header3} className="serviceCard">
-<p className="m-0">
-Elevate your wardrobe with our professional dry cleaning services. Delicate fabrics, intricate designs, and special garments require special care, and that's exactly what we offer. 
-Our dry cleaning process is tailored to preserve the integrity of your clothes.
-</p>
-</Card>
+            <Card title="Dry Clean" footer={footer3} header={header3} className="serviceCard">
+              <p className="m-0">
+              {t('app.services.3.text')}
+              </p>
+            </Card>
 
-<Card title="Special Laundry" footer={footer4} header={header4} className="serviceCard">
-<p className="m-0">
-Your unique items deserve tailored care. Our Special Laundry service is crafted to handle specific needs such as linens, blankets, and other oversized or delicate items. 
+            <Card title="Special Laundry" footer={footer4} header={header4} className="serviceCard">
+              <p className="m-0">
+              {t('app.services.4.text')}
+              </p>
+            </Card>
 
-</p>
-</Card>
+          </div>
 
-</div>
+        </div>
 
-</div>
-
-<Wave2 />
-</div>
+        <Wave2 />
+      </div>
 
 
 
-<div className="content3">
+      <div className="content3">
 
-  <div className="faq">
+        <div className="faq">
 
-    <h1>FAQs</h1>
+          <h1>FAQs</h1>
 
-    <Panel className='faqPanel' header="What are the services you offer?" style={{fontSize: '1.21rem'}} toggleable collapsed='false'>
-      <p className="m-1">
-      At VSP Laundry Shop, we offer comprehensive laundry solutions, including basic services for everyday wear, 
-      expedited Rush Laundry, professional Dry Cleaning for delicate items, and specialized care with our Special Laundry service.
-      </p>
-    </Panel>
+          <Panel className='faqPanel' header={t('app.faq.1.question')} style={{ fontSize: '1.21rem' }} toggleable collapsed='false'>
+            <p className="m-1">
+            {t('app.faq.1.answer')}
+            </p>
+          </Panel>
 
-    <br />
+          <br />
 
-    <Panel className='faqPanel' header="What kind of items do you cater for washing?"  style={{fontSize: '1.21rem'}} toggleable collapsed='false'>
-      <p className="m-1">
-        
+          <Panel className='faqPanel' header={t('app.faq.2.question')} style={{ fontSize: '1.21rem' }} toggleable collapsed='false'>
+            <p className="m-1">
 
-Basic Services:
-From everyday essentials like Wash'n Dry Fold to specialized care for Taekwondo Uniforms, Blankets, and Children's Clothing, our Basic Services cover all your regular laundry needs.
-<br />
-<br />
-Rush Laundry:
-Need it in a hurry? Our Rush Laundry service prioritizes quick turnaround for Wash'n Dry Fold, Press, and more, ensuring your laundry is ready when you need it.
-<br />
-<br />
-Dry Clean:
-For delicate and formal wear, trust our Dry Cleaning service. From Polo Shirts to Wedding Gowns, we provide meticulous care, leaving your garments crisp and well-maintained.
-<br />
-<br />
-Special Laundry:
-Our Special Laundry service caters to unique items such as Backpacks, Shoes, Pillows, and Stuffed Toys, ensuring they receive the specialized attention they deserve.
-<br />
-<br />
-At VSP Laundry Shop, we offer a tailored approach to keep all your items looking their best.
-      </p>
-    </Panel>
+              {t('app.faq.2.answer.1')}
+              <br />
+              <br />
+              {t('app.faq.2.answer.2')}
+              <br />
+              <br />
+              {t('app.faq.2.answer.3')}
+              <br />
+              <br />
+              {t('app.faq.2.answer.4')}
+              <br />
+              <br />
+              {t('app.faq.2.answer.5')}
+            </p>
+          </Panel>
 
-    <br />
+          <br />
 
-    <Panel className='faqPanel' header="What are your opening hours?" style={{fontSize: '1.21rem'}} toggleable collapsed='false'>
-      <p className="m-1">
-        7am - 6pm, Monday to Sunday
-      </p>
-    </Panel>
+          <Panel className='faqPanel' header={t('app.faq.3.question')} style={{ fontSize: '1.21rem' }} toggleable collapsed='false'>
+            <p className="m-1">
+            {t('app.faq.3.answer')}
+            </p>
+          </Panel>
 
-    <br />
+          <br />
 
-    <Panel className='faqPanel' header="How many days will I receive my items back?"  style={{fontSize: '1.21rem'}} toggleable collapsed='false'>
-      <p className="m-1">
-      At VSP Laundry Shop, we understand the importance of a quick and reliable laundry service. With our commitment to efficiency, you can expect to have your freshly cleaned and perfectly pressed items back in your hands within just three days. Our streamlined processes, advanced equipment, and dedicated team ensure a swift turnaround without compromising on the quality of our services. Experience the convenience of prompt and professional laundry care, 
-      where we prioritize your time and deliver your items back to you, freshly laundered and ready to wear, within a speedy three-day window.
-      </p>
-    </Panel>
+          <Panel className='faqPanel' header={t('app.faq.4.question')} style={{ fontSize: '1.21rem' }} toggleable collapsed='false'>
+            <p className="m-1">
+            {t('app.faq.4.answer')}
+            </p>
+          </Panel>
 
-  </div>
+        </div>
 
-  <Wave3 />
+        <Wave3 />
 
-</div>
+      </div>
 
-<div className="footnote">
-  <h1>Vsp Laundry Shop</h1>
-  <h2>Quezon Street, Panabo City, Davao Region, 8105</h2>
-  <h2>Contact Number na wala ko kabalo</h2>
-</div>
+      <div className="footnote">
+        <h1>Vsp Laundry Shop</h1>
+        <h2>Quezon Street, Panabo City, Davao Region, 8105</h2>
+        <h2>Contact Number na wala ko kabalo</h2>
+      </div>
 
-</>
-)
+    </>
+  )
 }
 
 export default App
