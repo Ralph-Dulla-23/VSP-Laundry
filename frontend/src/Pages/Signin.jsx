@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import { InputText } from 'primereact/inputtext';
 import { Card } from 'primereact/card';
 import { Password } from 'primereact/password';
@@ -36,8 +36,8 @@ function Signin() {
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        if (data.error) {
-          showToast(data.error);
+        if (data == null) {
+          showToast('Email already in use.');
         } else {
           showToast('Account created successfully.');
         }
@@ -46,7 +46,7 @@ function Signin() {
 
   function showToast(message) {
     toast.current.show({ severity: 'error', summary: 'Error', detail: message, life: 3000 });
-  }
+  };
 
   return (
     <>
@@ -85,6 +85,7 @@ function Signin() {
 
           <div className="loginButtons">
             <Button className='loginb' label="Sign up" onClick={handleRegister} />
+            <Toast ref={toast} />
             <Button icon='pi pi-google' className='loginG' label="Sign up with Google" />
           </div>
 

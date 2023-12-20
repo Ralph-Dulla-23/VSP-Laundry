@@ -69,11 +69,17 @@ const checkExist = ( username, email, password ) => {
         password: password,
         usertype: "User",
         Position: "n/a"
-
-    }
+    }   
     
+    userdata["user"].push(person);
+
+    jsonfile.writeFileSync(DATABASE, userdata, function (err) {
+        if (err) console.error(err)
+    });
+
     return { person: person };
 }
+
 
 const checkOrder = ( username, password ) => {
     var order = {};

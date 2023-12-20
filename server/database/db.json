@@ -22,48 +22,51 @@
             "Position": "n/a"
         }
     ],
-
     "JobOrders": [
         {
-            "Customer":"Shelly",
-            "Service":"Wash",
-            "Items": [{
-                "Item":"item sample 01",
-                "Itemtype": "sample ID 01",
-                "Quantity": "1"
-            }],
+            "Customer": "Shelly",
+            "Service": "Wash",
+            "Items": [
+                {
+                    "Item": "item sample 01",
+                    "Itemtype": "sample ID 01",
+                    "Quantity": "1"
+                }
+            ],
             "Datarecieved": "Recieve Sample 01",
             "Datetoclaim": "1/1/2024",
             "Progress": "not finished",
             "Report": "Report sample"
         },
         {
-            "Customer":"Shaggy",
-            "Service":"Dry Wash",
-            "Items": [{
-                "Item":"item sample 02",
-                "Itemtype": "sample ID 02",
-                "Quantity": "2"
-            }],
+            "Customer": "Shaggy",
+            "Service": "Dry Wash",
+            "Items": [
+                {
+                    "Item": "item sample 02",
+                    "Itemtype": "sample ID 02",
+                    "Quantity": "2"
+                }
+            ],
             "Datarecieved": "Recieve Sample 02",
             "Datetoclaim": "1/1/2024",
             "Progress": "not finished",
             "Report": "Report sample"
         },
         {
-            "Customer":"Danny",
-            "Service":"Dry Wash",
-            "Items": [{
-                "Item":"item sample 03",
-                "Itemtype": "sample ID 03",
-                "Quantity": "3"
-            }],
+            "Customer": "Danny",
+            "Service": "Dry Wash",
+            "Items": [
+                {
+                    "Item": "item sample 03",
+                    "Itemtype": "sample ID 03",
+                    "Quantity": "3"
+                }
+            ],
             "Datarecieved": "Recieve Sample 03",
             "Datetoclaim": "1/1/2024",
             "Progress": "not finished",
             "Report": "Report sample"
         }
     ]
-    
-
 }
