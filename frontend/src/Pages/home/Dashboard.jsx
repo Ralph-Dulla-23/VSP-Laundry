@@ -53,11 +53,12 @@ function Dashboard() {
   };
 
   const onRowSelect = (event) => {
-    <Dialog header='Job Order' visible={visible2} style={{ width: '50vw' }} draggable={false} onHide={() => setVisible2(false)}>
+      <Dialog header='Job Order' visible={visible2} style={{ width: '50vw' }} draggable={false} onHide={() => setVisible2(false)}>
       <p>
-        {event.data.ID}
+        trst
       </p>
     </Dialog>
+
   };
 
   const getSeverity = (job) => {
@@ -97,7 +98,7 @@ function Dashboard() {
         <div className="tableCard">
 
           <DataTable value={job} paginator rows={5} selectionMode="single" header={header} stripedRows sortMode="multiple"
-            selection={selectedProduct} onRowSelect={onRowSelect} onSelectionChange={(e) => setSelectedProduct(e.value)} 
+            selection={selectedProduct} onRowSelect={onRowSelect()} onSelectionChange={(e) => setSelectedProduct(e.value)} 
             tableStyle={{ height: '20rem' }}>
 
             <Column field="ID" header="ID" alignHeader={'center'} style={{ textAlign: 'center' }}></Column>

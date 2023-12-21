@@ -13,6 +13,8 @@ function Signin() {
   const [confirmPassword, setConfPassword] = useState('');
   const toast = useRef(null);
 
+  let userData = { user: name, email: email, password: password };
+  
   function handleRegister(event) {
     event.preventDefault();
 
@@ -26,7 +28,6 @@ function Signin() {
       return;
     }
 
-    let userData = { user: name, email: email, password: password };
 
     fetch('/api/reg', {
       method: 'post',
@@ -42,6 +43,7 @@ function Signin() {
           showToast('Account created successfully.');
         }
       });
+      return;
   }
 
   function showToast(message) {

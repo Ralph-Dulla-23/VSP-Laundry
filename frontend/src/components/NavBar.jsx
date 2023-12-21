@@ -20,12 +20,8 @@ function NavBar() {
     
     useEffect(() => {
 
-        
         if (checked == true){
-            i18n.changeLanguage('tg')
-        }else {
-            i18n.changeLanguage('en')
-        }
+            i18n.changeLanguage('tg')}
         
     });
 

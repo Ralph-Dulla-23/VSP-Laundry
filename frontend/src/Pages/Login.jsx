@@ -32,17 +32,17 @@ function Login() {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log(data);
-        Test(data.login, data.usertype);
+        Test(data.login, data.person.usertype);
       });
 
     console.log('clicked login');
   }
 
   function Test(login, usertype) {
+
     if (login === true) {
       
-      if(usertype = "Admin"){ //dont remove this pls
+      if(usertype === "Admin"){ //dont remove this pls
         handleLoginToDashboard();
       }else {
         handleBack();
