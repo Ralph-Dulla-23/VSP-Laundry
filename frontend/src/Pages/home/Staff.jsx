@@ -18,8 +18,9 @@ function Staff() {
   const header = (
     <div className="flex flex-wrap align-items-center justify-content-between gap-2" style={{ minWidth: '50rem', padding: '0.2rem 1.1rem' }}>
       <span className="m-2" style={{ fontSize: '1.9rem' }}>Staff</span>
-      <Button style={{ float: 'right' }} severity='danger' label='Remove Staff' />
+      
       <Button style={{ float: 'right' }} label='Add Staff' onClick={() => setVisible(true)} />
+      <Button style={{ float: 'right', marginRight: '8px' }} severity='danger' label='Remove Staff' />
 
       <Dialog header='Add Staff' visible={visible} style={{ width: '50vw' }} draggable={false} onHide={() => setVisible(false)}>
         <AddStaffForm />
@@ -77,7 +78,7 @@ function Staff() {
         <div className="tableCard">
 
           <DataTable value={staff} paginator rows={5} selectionMode="single" header={header} stripedRows
-            selection={selectedProduct} tableStyle={{ height: '20rem' }}>
+            selection={selectedProduct} onSelectionChange={(e) => setSelectedProduct(e.value)}  tableStyle={{ height: '20rem' }}>
             <Column field="name" header="Name" alignHeader={'center'} style={{ textAlign: 'center' }}></Column>
             <Column field="Position" header="Job" body={statusBodyTemplate} alignHeader={'center'} style={{ textAlign: 'center' }}></Column>
           </DataTable>

@@ -51,7 +51,7 @@ const checkPass = ( username, password ) => {
 const checkExist = ( username, email, password ) => {
 
     var person = {};
-
+    console.log(2);
     for ( var i in userdata["user"] ) {
         if ( userdata["user"][i].email == email) {
             return person;
@@ -70,12 +70,14 @@ const checkExist = ( username, email, password ) => {
         Position: "n/a"
     }   
     
+    console.log(3);
     userdata["user"].push(person);
 
     jsonfile.writeFileSync(DATABASE, userdata, function (err) {
         if (err) console.error(err)
     });
 
+    console.log(4);
     return { person: person };
 }
 
@@ -141,6 +143,7 @@ app.post("/api/reg", (req, res) => {
     console.log ( "AUTH: Received data ..." );
     console.log (req.body);  
     let {user, email, password} = req.body;
+    console.log(1);
     res.json ( checkExist(String(user), String(email).trim(), String(password).trim()) ); 
 });
 
