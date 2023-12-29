@@ -805,7 +805,7 @@ form .textarea textarea:focus::placeholder {
 /* Banner */
 
 .bannerCard {
-    height: 400px;
+    height: auto;
     width: 600px;
     padding: 2.3em 2em;
     margin: 200px 200px;
@@ -818,7 +818,7 @@ form .textarea textarea:focus::placeholder {
 }
 
 .bannerCard h1 {
-    font-size: 90px;
+    font-size: 70px;
 }
 
 .bannerCard p {
@@ -1108,7 +1108,7 @@ form .textarea textarea:focus::placeholder {
 /* Banner */
 
 .bannerCard {
-    height: 340px;
+    height: auto;
     width: 600px;
     padding: 2.3em 2em;
     margin: 150px 200px;
@@ -1546,7 +1546,7 @@ form .textarea textarea:focus::placeholder {
 /* Banner */
 
 .bannerCard {
-    height: 270px;
+    height: auto;
     width: 480px;
     padding: 2.3em 2em;
     margin: 150px 150px;
@@ -1908,7 +1908,7 @@ form .textarea textarea:focus::placeholder {
 
 /* Banner */
 .bannerCard {
-    height: 240px;
+    height: auto;
     width: 100vw;
     margin: 50px 0px;
     background-color: #7e6c6028;
