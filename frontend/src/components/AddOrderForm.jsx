@@ -26,7 +26,7 @@ function AddOrderForm() {
   function handleRegister(event) {
     event.preventDefault();
 
-    if (ID === -1 || customer === '' || service === '' || confirmPassword === '') {
+    if (ID === '' || customer === '' || service === '' || dateRec === null || dateClaim === null) {
       showToast('Please fill in all fields.');
       return;
     }
@@ -35,35 +35,27 @@ function AddOrderForm() {
       ID: ID,
       Customer: customer,
       Service: service,
-      Items: [
-
-      ],
-      DateReceived: '',
-      Datetoclaim: ''
+      DateReceived: dateRec,
+      Datetoclaim: dateClaim
     };
 
-    fetch('/api/regStaff', {
+    fetch('/api/addOrder', {
       method: 'post',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify(userData),
     })
-      .then((response) => response.json())
       .then((data) => {
         console.log(data);
-        if (Object.keys(data).length === 0) {
-          showToast('Email already in use.');
+        if (data) {
+          showToast('Added new order.');
         } else {
-          showToast('Account created successfully.');
+          showToast('ID already in use.');
         }
       });
-    setID('');
-    setCustomer('');
-    setService('');
-    setConfPassword('');
   }
 
   function showToast(message) {
-    toast.current.show({ severity: 'error', summary: 'Error', detail: message, life: 3000 });
+    toast.current.show({ severity: 'info', summary: 'Notification', detail: message, life: 3000 });
   };
 
   return (

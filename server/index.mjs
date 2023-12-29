@@ -109,6 +109,36 @@ const checkExistStaff = ( username, email, password ) => {
     return { person: person };
 }
 
+const checkID = ( ID, Customer, Service, DateReceived, Datetoclaim ) => {
+
+    var jobOrder = {};
+
+    for ( var i in userdata["jobOrders"] ) {
+        if ( userdata["jobOrders"][i].ID === ID) {
+            return false;
+        }
+    }
+
+    console.log(1)
+    jobOrder = {
+        ID: ID,
+        Customer: Customer,
+        Service: Service,
+        DateReceived: DateReceived,
+        Datetoclaim: Datetoclaim,
+        Progress: "Idle",
+        Report: null
+    }   
+
+    console.log(jobOrder)
+    userdata["jobOrders"].push(jobOrder);
+    jsonfile.writeFileSync(DATABASE, userdata, function (err) {
+        if (err) console.error(err)
+    });
+
+    return true;
+}
+
 const updateStaff = ( name, Position ) => {
 
     for ( var i in userdata["user"] ) {
@@ -219,6 +249,13 @@ app.post("/api/regStaff", (req, res) => {
     console.log (req.body);  
     let {user, email, password} = req.body;
     res.json ( checkExistStaff(String(user), String(email).trim(), String(password).trim()) ); 
+});
+
+app.post("/api/addOrder", (req, res) => {
+    console.log ( "AUTH: Received data ..." );
+    console.log (req.body);  
+    let {ID, Customer, Service, DateReceived, Datetoclaim} = req.body;
+    res.json ( checkID(parseInt(ID), String(Customer), String(Service), String(DateReceived), String(Datetoclaim)) ); 
 });
 
 app.put("/api/updatePosition", (req, res) => {
