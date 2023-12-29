@@ -7,22 +7,24 @@ import { useState, useEffect } from 'react';
 import { useTranslation } from "react-i18next";
 import { ToggleButton } from 'primereact/togglebutton';
 
-
-// ... (your imports)
-
 function NavBar() {
+
     const [checked, setChecked] = useState(false);
     const navigate = useNavigate();
     const handleHomeClick = () => navigate('/');
-    const handleServiceClick = () => navigate('/Services');
     const handleLoginClick = () => navigate('/Login');
     const [t, i18n] = useTranslation('common');
     
-    useEffect(() => {
-
-        if (checked == true){
+    const changeLang = () => {
+        if (checked === true){
             i18n.changeLanguage('tg')}
-        
+        else {
+            i18n.changeLanguage('en')
+        }
+    }
+
+    useEffect(() => {
+        changeLang()
     });
 
     const items = [
@@ -30,9 +32,9 @@ function NavBar() {
             label: (
                 <ToggleButton
                     checked={checked}
-                    onChange={(e) => setChecked(e.value)}
-                    onLabel="Tagalog" // Change this to your desired text for the ON state
-                    offLabel="English" // Change this to your desired text for the OFF state
+                    onChange={(e) => {setChecked(e.value); console.log(checked)}}
+                    onLabel="Tagalog" 
+                    offLabel="English"
                     className="w-8rem"
                 />
             ),
