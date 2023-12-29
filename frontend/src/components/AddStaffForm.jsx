@@ -54,8 +54,6 @@ function AddStaffForm() {
 
     return (
         <>
-
-            <h1>Add Staff</h1>
             
             <div className="addPanel">
                 <InputText id="username" placeholder='Name' aria-describedby="username-help"

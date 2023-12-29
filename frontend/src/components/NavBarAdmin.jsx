@@ -25,7 +25,7 @@ function NavBarAdmin() {
             icon: 'pi pi-fw pi-question-circle',
         },
         {
-            label: <div className='navtext'>LOGOUT</div>,
+            label: <div className='navtext' onClick={handleBack}>LOGOUT</div>,
             icon: 'pi pi-fw pi-sign-in',
         }
     ];
